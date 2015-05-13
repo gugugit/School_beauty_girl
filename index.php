@@ -10,6 +10,11 @@
         <link href="bootstrap.css" rel="stylesheet">
         <script src="jquery.js"></script>
       <style type="text/css">
+      .rank img{
+      width:30em;
+      height:29px;
+      border:1px gray solid;
+      }
       .col_2  {
   position: relative;
   min-height: 1px;
@@ -64,7 +69,7 @@
 			<?php require("DBMysql.php");$query=new DBMysql();$i=0;$sql="select * from stu order by rand() limit 2";$result=$query->query($sql);while($row=mysql_fetch_array($result)){ $i++;?>
 			<div class="col_2 rankimg<?php echo $i; ?> rankimg">
 				<input type="hidden" value="<?php echo $row["id"];?>">
-				<a  href="#" id="ranka<?php echo $i; ?>"><img src="<?php echo $row["beauti"];?>" class="img-responsive img-rounded" alt="Responsive image"></a>
+				<a  href="#" id="ranka<?php echo $i; ?>"><img src="<?php echo $row["beauti"];?>" class="img-responsive img-rounded" alt="<?php echo $row["stu"];?> image"></a>
 	            <span><?php echo $row["stu"];?></span>
 	        </div>
 	        <?php }?>
