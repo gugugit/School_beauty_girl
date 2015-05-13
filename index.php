@@ -7,10 +7,10 @@
         <meta http-equiv="X-UA-Compatibl\e" content="IE=edge">
         <meta name="keywords" content="Campus campus Belle ranking selection">
         <meta name="description" content="Campus campus Belle ranking selection,by shiyanlou">
-    <link href="bootstrap.css" rel="stylesheet">
-      <script src="jquery.js"></script>
+        <link href="bootstrap.css" rel="stylesheet">
+        <script src="jquery.js"></script>
       <style type="text/css">
-.col_2  {
+      .col_2  {
   position: relative;
   min-height: 1px;
   padding-right: 15px;
@@ -92,6 +92,7 @@
             }
         })
     }
+    //getCookie
     function getCookie(name)
     {
         var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
