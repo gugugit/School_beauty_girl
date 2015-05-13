@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>????????</title>
+        <title>Campus campus Belle ranking selection</title>
          <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <meta http-equiv="X-UA-Compatibl\e" content="IE=edge">
-        <meta name="keywords" content="????????">
-        <meta name="description" content="????????,???????.">
-    <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
-      <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+        <meta name="keywords" content="Campus campus Belle ranking selection">
+        <meta name="description" content="Campus campus Belle ranking selection,by shiyanlou">
+    <link href="bootstrap.css" rel="stylesheet">
+      <script src="jquery.js"></script>
       <style type="text/css">
 .col_2  {
   position: relative;
@@ -48,7 +48,7 @@
     <body>
     <div class="wrapper" id="wrapper">
         <nav class="navbar navbar-default navbar-static-top">
-              <a class="navbar-brand" href="index.php">??????(??? ????)</a>
+              <a class="navbar-brand" href="index.php">Campus Belle ranking (shiyanlou.com)</a>
         </nav>
         <!-- ^ ?? -->
         		<div class="container rank">
@@ -59,19 +59,19 @@
       </div>
 			<div class="alert alert-info alert-dismissible" role="alert" style="display:none;">
 			  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">	&times;</span></button>
-			  <strong>!</strong>???????????????????~
+			  <strong>!</strong>Of the two girls, who do you think is more beautiful~
 			</div>
 			<?php require("DBMysql.php");$query=new DBMysql();$i=0;$sql="select * from stu order by rand() limit 2";$result=$query->query($sql);while($row=mysql_fetch_array($result)){ $i++;?>
 			<div class="col_2 rankimg<?php echo $i; ?> rankimg">
 				<input type="hidden" value="<?php echo $row["id"];?>">
-				<a  href="#" id="ranka<?php echo $i; ?>"><img src="http://7sbqdl.com1.z0.glb.clouddn.com/<?php echo $row["beauti"];?>.jpg?imageView2/1/w/300/h/400/q/64/format/JPG  " class="img-responsive img-rounded" alt="Responsive image"></a>
+				<a  href="#" id="ranka<?php echo $i; ?>"><img src="<?php echo $row["beauti"];?>" class="img-responsive img-rounded" alt="Responsive image"></a>
 	            <span><?php echo $row["stu"];?></span>
 	        </div>
 	        <?php }?>
         </div>
         <!-- $ ?? -->
     </div>
-    <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script src="bootstrap.js"></script>
     <script type="text/javascript">
     $("#ranka1").on("click",function(){
         $("#ranka2").hide();
